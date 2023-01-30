@@ -5,6 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+	rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 	<title>Ip Address Tracker</title>
 </head>
@@ -14,27 +18,33 @@
 	IP address Tracker
 	</h2>
 	<div class="input-field">
-	<input type="text" value="" placeholder="Search for any IP address or domain">
-	<button class="search-btn">
+	<input
+	id="ip-input"
+	type="text"
+	autocomplete="on"
+	placeholder="Search for any IP address or domain"
+	value= ""
+	>
+	<button class="search-btn" id="search-btn" onclick="getInputValue()" >
 		<img src="./assets//icon-arrow.svg" alt="arrow" class="btn-img">
 	</button>
 	</div>
 	<div class="result">
 		<div class="result-item">
 		<span class="result-title">IP Address</span>
-		<span id="ip" ></span>
+		<span id="ip" class="result-value" >-</span>
 		</div>
 		<div class="result-item">
 			<span class="result-title">Location</span>
-			<span id="location"></span>
+			<span id="location" class="result-value">-</span>
 			</div>
 			<div class="result-item">
 				<span class="result-title">Timezone</span>
-				<span id="timezone"></span>
+				<span id="timezone" class="result-value">-</span>
 				</div>
 				<div class="result-item">
 					<span class="result-title">Isp</span>
-					<span id="isp"></span>
+					<span id="isp" class="result-value">-</span>
 					</div>
 	</div>
 </div>
