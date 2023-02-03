@@ -89,8 +89,21 @@
 	border-radius : 10px 0 0 10px;
 	font-size:  18px;
 	border: none;
-	color: var(--gray);
 	outline: none;
+	color:var(--black)
+ }
+
+ input::placeholder{
+	color: var(--gray);
+
+ }
+
+ input:hover{
+	outline: 2px solid green;
+ }
+
+ input:focus{
+	outline: 2px solid var(--black);
  }
 
  .search-btn{
@@ -103,6 +116,9 @@
 	width: 50px;
  }
 
+ .search-btn:hover{
+	opacity: 87%;
+ }
  .btn-img{
 	padding:0 5px;
  }
