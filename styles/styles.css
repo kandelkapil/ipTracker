@@ -73,7 +73,9 @@
 
 .input-field{
 	display: flex;
-	margin-top: 20px;
+    margin-top: 20px;
+    width: 35vw;
+    justify-content: center;
 }
 
  .head{
@@ -82,7 +84,7 @@
  }
 
  input{
-	width: 300px;
+	width: 100%;
 	padding: 16px 28px;
 	border-radius : 10px 0 0 10px;
 	font-size:  18px;
